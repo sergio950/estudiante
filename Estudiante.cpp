@@ -18,6 +18,12 @@ void setTelefono(int tel){telefono=tel;}
 //mostrar (get)
     string getCarne(){return Carne;}
     string getNombre(){return nombre;}
-    
+    string getApellidos(){return apellidos;}
+    string getTelefono(){return telefono;}
+// metodos 
+    void mostrar(){
+cout<<"\n----------------------------------"<<endl; 
+cout<<Carne<<", "<<nombres<<", "<<apellidos<<", "<<telefono<<endl; 
+    }
 
-}
+};
