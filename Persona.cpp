@@ -2,16 +2,16 @@
 using namespace std; 
 
 class Persona{
-    //atributos 
-    protected : string Nombre, Apellidos; 
-                int Telefonos; 
-    protedted : 
-        persona(string nom, string ape, int tel){
-            Nombres=nom; 
-            Apellidos=ape; 
-            Telefonos=tel; 
+    protected : 
+                string nombres,apellidos; 
+                int telefono; 
+    protected : 
+        Persona(string nom, string ape, int tel){
+            nombres=nom; 
+            apellidos=ape; 
+            telefono=tel; 
         }
-//metodos de accion 
+ 
 void agregar(); 
 void mostrar(); 
 

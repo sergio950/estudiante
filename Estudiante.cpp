@@ -3,28 +3,27 @@
 using namespace std; 
 
 class Estudiante:Persona{
-    //atributos 
-    private: string Carne; 
+     
+    private: string carne; 
     public: 
-    //constructor 
-        Estudiante(string nom, string ape, int tel, string n):Persona(nom,ape,tel){
-            Carne=n; 
+        Estudiante(string nom, string ape, int tel, string n):
+        Persona(nom,ape,tel){
+            carne=n; 
         }
-//modificar (set)
-void setCarne(string n){nit=n;}
+
+void setCarne(string n){carne=n;}
 void setNombres(string nom){nombres=nom;}
 void setApellidos(string ape){apellidos=ape;}
 void setTelefono(int tel){telefono=tel;}
-//mostrar (get)
-    string getCarne(){return Carne;}
-    string getNombre(){return nombre;}
+
+    string getCarne(){return carne;}
+    string getNombres(){return nombres;}
     string getApellidos(){return apellidos;}
-    string getTelefono(){return telefono;}
-// metodos 
+    int getTelefono(){return telefono;}
+ 
     void mostrar(){
 cout<<"\n----------------------------------"<<endl; 
-cout<<Carne<<", "<<nombres<<", "<<apellidos<<", "<<telefono<<endl; 
+cout<<carne<<", "<<nombres<<", "<<apellidos<<", "<<telefono<<endl; 
     }
-
 };
 

@@ -13,7 +13,7 @@ cin>>apellidos;
 cout<<"Ingrese telefono; ";
 cin>>telefono; 
 
-Estudiante obj = Estudiante(nombres,apellidos,telefono,carne); 
+Estudiante obj = Estudiante(nombres,apellidos,telefono,carne);   
 obj.mostrar();
 
 cout<<"-------------Modificar--------------"<<endl;
@@ -24,8 +24,19 @@ cin>>nombres;
 cout<<"Ingrese apellidos; "; 
 cin>>apellidos; 
 cout<<"Ingrese telefono; "; 
-cin>>
-     
+cin>>telefono; 
+
+obj.setCarne(carne);
+obj.setNombres(nombres);
+obj.setApellidos(apellidos); 
+obj.setTelefono(telefono); 
+
+    cout<<"\n\nNuevo carne; "<<obj.getCarne()<<endl;
+	cout<<"Nuevos nombres; "<<obj.getNombres()<<endl;
+	cout<<"Nuevos apellidos; "<<obj.getApellidos()<<endl;
+	cout<<"Nuevos numero de telefono; "<<obj.getTelefono()<<endl;
+	
+
 }
 
 
