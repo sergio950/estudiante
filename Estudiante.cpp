@@ -27,3 +27,4 @@ cout<<Carne<<", "<<nombres<<", "<<apellidos<<", "<<telefono<<endl;
     }
 
 };
+
